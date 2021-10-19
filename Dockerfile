@@ -12,7 +12,7 @@ COPY . .
 RUN go mod download
 RUN go build -o course_go .
 
-WORKDIR /dev/
+WORKDIR /usr/dev/
 RUN mkdir src .
 RUN cp /usr/k8s/course_go ./src
 EXPOSE 8083
